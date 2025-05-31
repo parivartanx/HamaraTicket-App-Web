@@ -7,6 +7,7 @@ import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -34,9 +35,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">EZ</span>
+            <span className="text-primary-foreground font-bold text-lg">HT</span>
           </div>
-          <span className="font-bold text-xl">ExpenseZ</span>
+          <span className="font-bold text-xl">Hamara Ticket</span>
         </Link>
         
         {/* Desktop Navigation */}
@@ -67,7 +68,7 @@ const Header = () => {
           </Button>
           
           <Button asChild className="font-medium">
-            <a href="https://play.google.com/expensez" target="_blank" rel="noreferrer">
+            <a href="https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket" target="_blank" rel="noreferrer">
               Download App
             </a>
           </Button>
@@ -125,7 +126,7 @@ const Header = () => {
             </Link>
             
             <Button asChild className="w-full mt-2">
-              <a href="https://play.google.com/expensez" target="_blank" rel="noreferrer">
+              <a href="https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket" target="_blank" rel="noreferrer">
                 Download App
               </a>
             </Button>

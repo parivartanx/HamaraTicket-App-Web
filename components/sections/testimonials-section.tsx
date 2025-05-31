@@ -2,104 +2,53 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Card, CardContent } from "@/components/ui/card";
-import Image from 'next/image';
 import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Small Business Owner",
-    image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
+    name: "Rahul Kumar",
     rating: 5,
-    comment: "ExpenseZ has completely transformed how I manage my business finances. The categorization features and expense reports save me hours each month."
+    review: "Best app for booking water park tickets! Saved me from standing in long queues. The instant digital tickets are super convenient.",
+    date: "2 days ago"
   },
   {
-    name: "James Wilson",
-    role: "Freelance Designer",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
+    name: "Priya Sharma",
     rating: 5,
-    comment: "As a freelancer, keeping track of expenses was always a headache until I found ExpenseZ. Now I can easily separate business and personal expenses."
+    review: "Amazing app! Found great deals on water park tickets and the booking process was super smooth. Highly recommended!",
+    date: "1 week ago"
   },
   {
-    name: "Emily Chen",
-    role: "Graduate Student",
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-    rating: 4,
-    comment: "Living on a tight budget as a student, ExpenseZ helps me stay on track with my spending and save for what matters most. The UI is super intuitive!"
+    name: "Amit Patel",
+    rating: 5,
+    review: "Very user-friendly app. Booked tickets for my family in minutes. The exclusive deals are really worth it!",
+    date: "2 weeks ago"
   },
   {
-    name: "Michael Rodriguez",
-    role: "Finance Professional",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+    name: "Neha Gupta",
     rating: 5,
-    comment: "Even as someone who works in finance, I find ExpenseZ incredibly useful for my personal finances. The analytics and insights are impressive."
+    review: "Excellent service! The app made planning our water park visit so easy. Will definitely use it again.",
+    date: "3 weeks ago"
   },
+  {
+    name: "Vikram Singh",
+    rating: 5,
+    review: "Great app for booking water parks. The instant confirmation and digital tickets are a game-changer!",
+    date: "1 month ago"
+  },
+  {
+    name: "Anjali Desai",
+    rating: 5,
+    review: "Love this app! Found the best deals for water parks and the booking was super quick. Perfect for family outings!",
+    date: "1 month ago"
+  }
 ];
-
-interface Testimonial {
-  name: string;
-  role: string;
-  image: string;
-  rating: number;
-  comment: string;
-}
-
-interface TestimonialCardProps {
-  testimonial: Testimonial;
-  index: number;
-}
-
-const TestimonialCard = ({ testimonial, index }: TestimonialCardProps) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-  
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-    >
-      <Card className="h-full flex flex-col border-border/40 hover:border-border transition-all duration-300">
-        <CardContent className="flex flex-col h-full p-6">
-          <div className="flex space-x-1 mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star 
-                key={i} 
-                className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-500 fill-yellow-500' : 'text-muted-foreground'}`} 
-              />
-            ))}
-          </div>
-          
-          <p className="text-foreground/90 flex-grow mb-6 italic">"{testimonial.comment}"</p>
-          
-          <div className="flex items-center mt-auto pt-4 border-t border-border/40">
-            <div className="relative h-12 w-12 rounded-full overflow-hidden">
-              <Image
-                src={testimonial.image}
-                alt={testimonial.name}
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="ml-3">
-              <h4 className="font-medium">{testimonial.name}</h4>
-              <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </motion.div>
-  );
-};
 
 const TestimonialsSection = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
   
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-muted/30">
+    <section id="testimonials" className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4">
         <div ref={sectionRef} className="text-center max-w-3xl mx-auto mb-16">
           <motion.p
@@ -108,7 +57,7 @@ const TestimonialsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ duration: 0.5 }}
           >
-            USER TESTIMONIALS
+            USER REVIEWS
           </motion.p>
           <motion.h2
             className="text-3xl md:text-4xl font-bold mb-4"
@@ -124,14 +73,56 @@ const TestimonialsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Join thousands of satisfied users who have transformed their financial habits with ExpenseZ.
+            Join thousands of happy users who have transformed their entertainment booking experience
           </motion.p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} testimonial={testimonial} index={index} />
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => {
+            const ref = useRef(null);
+            const isTestimonialInView = useInView(ref, { once: true, amount: 0.3 });
+            
+            return (
+              <motion.div
+                key={index}
+                ref={ref}
+                className="bg-background p-6 rounded-xl shadow-lg"
+                initial={{ opacity: 0, y: 20 }}
+                animate={isTestimonialInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <div className="flex items-center mb-4">
+                  <div className="flex-1">
+                    <h3 className="font-semibold">{testimonial.name}</h3>
+                    <p className="text-sm text-muted-foreground">{testimonial.date}</p>
+                  </div>
+                  <div className="flex items-center">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-muted-foreground">{testimonial.review}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+        
+        <div className="text-center mt-12">
+          <motion.a
+            href="https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket&pcampaignid=web_share"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center text-primary hover:underline"
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            Read more reviews on Google Play
+            <svg className="ml-2 h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </motion.a>
         </div>
       </div>
     </section>

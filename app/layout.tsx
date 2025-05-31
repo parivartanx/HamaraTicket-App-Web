@@ -8,24 +8,24 @@ import Footer from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://expensez.app'),
-  title: 'ExpenseZ - Personal Finance Management App',
-  description: 'Track expenses, manage budgets, and gain financial insights with ExpenseZ, your personal finance companion app.',
-  keywords: 'expense tracker, budget app, finance management, money tracker, personal finance app',
-  authors: [{ name: 'ExpenseZ Team' }],
-  creator: 'ExpenseZ',
-  publisher: 'ExpenseZ',
+  metadataBase: new URL('https://hamaraticket.com'),
+  title: 'Hamara Ticket - Water Park & Event Booking App',
+  description: 'Book water parks and events with ease. Skip the lines, get instant tickets, and enjoy exclusive deals with Hamara Ticket.',
+  keywords: 'water park booking, event tickets, online booking, digital tickets, entertainment booking, water parks, events, instant tickets',
+  authors: [{ name: 'Hamara Ticket Team' }],
+  creator: 'Hamara Ticket',
+  publisher: 'Hamara Ticket',
   openGraph: {
-    title: 'ExpenseZ - Personal Finance Management App',
-    description: 'Track expenses, manage budgets, and gain financial insights with ExpenseZ',
-    url: 'https://expensez.app',
-    siteName: 'ExpenseZ',
+    title: 'Hamara Ticket - Water Park & Event Booking App',
+    description: 'Book water parks and events with ease. Skip the lines, get instant tickets, and enjoy exclusive deals.',
+    url: 'https://hamaraticket.com',
+    siteName: 'Hamara Ticket',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ExpenseZ App',
+        alt: 'Hamara Ticket App',
       },
     ],
     locale: 'en_US',
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ExpenseZ - Personal Finance Management App',
-    description: 'Track expenses, manage budgets, and gain financial insights with ExpenseZ',
+    title: 'Hamara Ticket - Water Park & Event Booking App',
+    description: 'Book water parks and events with ease. Skip the lines, get instant tickets, and enjoy exclusive deals.',
     images: ['/twitter-image.jpg'],
-    creator: '@expensez',
+    creator: '@hamaraticket',
   },
   robots: {
     index: true,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     google: 'your-google-site-verification',
   },
   alternates: {
-    canonical: 'https://expensez.app',
+    canonical: 'https://hamaraticket.com',
   },
 };
 

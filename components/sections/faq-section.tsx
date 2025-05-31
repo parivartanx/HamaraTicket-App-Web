@@ -11,28 +11,28 @@ import {
 
 const faqs = [
   {
-    question: "Is ExpenseZ free to use?",
-    answer: "ExpenseZ offers both free and premium plans. The free plan includes all essential expense tracking features, while the premium plan offers advanced analytics, unlimited categories, and cloud backup features."
+    question: "How do I book tickets through Hamara Ticket?",
+    answer: "Booking tickets is simple! Just download our app, browse water parks or events, select your preferred date and time, choose the number of tickets, and complete the payment. You'll receive digital tickets instantly on your device."
   },
   {
-    question: "Can I sync my bank accounts with ExpenseZ?",
-    answer: "Yes, ExpenseZ supports secure bank synchronization in selected countries. This feature allows you to automatically import and categorize transactions from your connected accounts."
+    question: "Can I book tickets for a group?",
+    answer: "Yes! Hamara Ticket makes group bookings easy. You can book multiple tickets in a single transaction, and we offer special group discounts for larger bookings. Perfect for family outings or corporate events."
   },
   {
-    question: "How secure is my financial data with ExpenseZ?",
-    answer: "We take security very seriously. ExpenseZ uses bank-level encryption for all data, secure authentication methods, and never stores your bank login credentials. Your data is regularly backed up and you can enable additional security features like biometric authentication."
+    question: "How do I use my digital tickets?",
+    answer: "Your digital tickets will be available in the app immediately after booking. Simply show the QR code at the venue entrance, and our staff will scan it for entry. No need to print anything!"
   },
   {
-    question: "Can I use ExpenseZ for business expenses?",
-    answer: "Absolutely! ExpenseZ works great for small businesses, freelancers, and professionals. You can separate business and personal expenses, create business-specific categories, and generate reports suitable for tax purposes."
+    question: "What payment methods are accepted?",
+    answer: "We accept various payment methods including credit/debit cards, UPI, digital wallets, and net banking. All transactions are secure and encrypted for your safety."
   },
   {
-    question: "Does ExpenseZ work offline?",
-    answer: "Yes, ExpenseZ is designed to work offline. You can record expenses even without an internet connection, and they will automatically sync when you're back online."
+    question: "Can I cancel or reschedule my booking?",
+    answer: "Yes, you can cancel or reschedule your booking through the app. Cancellation policies vary by venue, and refunds are processed according to the venue's terms. Check the specific venue's policy before booking."
   },
   {
-    question: "Can I export my data from ExpenseZ?",
-    answer: "Yes, you can export your financial data in multiple formats including PDF, CSV, and Excel. This is useful for creating backups, sharing information with your accountant, or migrating to other systems."
+    question: "How do I find water parks and events near me?",
+    answer: "The app uses your location to show nearby water parks and events. You can also use filters to search by date, price range, or specific activities. We regularly update our listings with new venues and events."
   }
 ];
 
@@ -66,7 +66,7 @@ const FAQSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Find answers to common questions about ExpenseZ and how it can help you manage your finances.
+            Find answers to common questions about booking water parks and events with Hamara Ticket.
           </motion.p>
         </div>
         

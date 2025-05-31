@@ -6,19 +6,19 @@ import Image from 'next/image';
 
 const benefits = [
   {
-    title: "Save Time Tracking Expenses",
-    description: "Quickly log expenses on-the-go with our intuitive interface. No more tedious manual entry or keeping paper receipts.",
-    image: "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg"
+    title: "Skip the Long Queues",
+    description: "Book your tickets online and get instant digital passes. No more waiting in long lines at the venue.",
+    image: "skip-line.png"
   },
   {
-    title: "Stay Within Your Budget",
-    description: "Set realistic budgets and receive notifications before you exceed them. Build better spending habits over time.",
-    image: "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg"
+    title: "Find the Best Deals",
+    description: "Compare prices and find the best deals for water parks and events. Save money with our exclusive offers.",
+    image: "best-deal.png"
   },
   {
-    title: "Make Informed Financial Decisions",
-    description: "Visualize your spending patterns with intuitive charts and reports. Identify areas where you can save money.",
-    image: "https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg"
+    title: "Plan Your Entertainment",
+    description: "Discover and book water parks and events in advance. Get notifications for new events and special offers.",
+    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
   }
 ];
 
@@ -36,7 +36,7 @@ const BenefitsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ duration: 0.5 }}
           >
-            WHY USE EXPENSEZ
+            WHY USE HAMARA TICKET
           </motion.p>
           <motion.h2
             className="text-3xl md:text-4xl font-bold mb-4"
@@ -44,7 +44,7 @@ const BenefitsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Transform Your Financial Future
+            Transform Your Entertainment Experience
           </motion.h2>
           <motion.p
             className="text-muted-foreground text-lg"
@@ -52,7 +52,7 @@ const BenefitsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            ExpenseZ helps you take control of your finances, build better habits, and work toward your financial goals.
+            Hamara Ticket helps you discover, book, and enjoy water parks and events with ease and convenience.
           </motion.p>
         </div>
         
@@ -83,7 +83,7 @@ const BenefitsSection = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-6 left-6 right-6 text-white">
-                      <p className="text-sm uppercase tracking-wider mb-1">ExpenseZ Feature</p>
+                      <p className="text-sm uppercase tracking-wider mb-1">Hamara Ticket Feature</p>
                       <h3 className="text-2xl font-bold">{benefit.title}</h3>
                     </div>
                   </div>
@@ -100,10 +100,10 @@ const BenefitsSection = () => {
                   
                   <ul className="space-y-4">
                     {[
-                      "Track expenses in real-time",
-                      "Visualize spending patterns",
-                      "Set and monitor financial goals",
-                      "Receive personalized insights"
+                      "Book tickets in seconds",
+                      "Get instant digital passes",
+                      "Compare prices and deals",
+                      "Receive exclusive offers"
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start">
                         <div className="mr-3 mt-1.5 h-5 w-5 flex-shrink-0 rounded-full bg-primary/20 text-primary flex items-center justify-center">

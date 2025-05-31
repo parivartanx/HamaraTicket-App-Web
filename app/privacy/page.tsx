@@ -1,191 +1,113 @@
 import React from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Privacy Policy - ExpenseZ App',
-  description: 'Privacy policy for ExpenseZ personal finance management mobile application.'
+export const metadata: Metadata = {
+  title: 'Privacy Policy - Hamara Ticket App',
+  description: 'Privacy Policy for Hamara Ticket App - Your Event Ticketing Solution',
 };
 
-export default function PrivacyPolicy() {
+const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto px-4 py-24 max-w-4xl">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8">Privacy Policy</h1>
-      
+    <div className="container mx-auto px-4 pt-24 py-16 max-w-4xl">
+      <h1 className="text-4xl font-bold mb-8">PRIVACY POLICY</h1>
+      <p className="text-muted-foreground mb-8">Last updated February 23, 2025</p>
+
       <div className="prose prose-lg dark:prose-invert max-w-none">
-        <p className="lead text-muted-foreground">Last updated: January 2025</p>
+        <p>
+          This Privacy Notice for Parivartan X ('we', 'us', or 'our'), describes how and why we might access, collect, store, use, and/or share ('process') your personal information when you use our services ('Services'), including when you:
+        </p>
+
+        <ul>
+          <li>Visit our website at http://www.hamaraticket.com, or any website of ours that links to this Privacy Notice</li>
+          <li>Download and use our mobile application (HamaraTicket), or any other application of ours that links to this Privacy Notice</li>
+          <li>Use HamaraTicket - A E-Ticket Booking Platform. HamaraTicket is an e-ticket booking platform that enables users to purchase tickets for parks, water parks, and private events in their vicinity. The platform offers a seamless ticketing experience, allowing customers to conveniently book tickets online. HamaraTicket is powered by ParivartanX, a leading software development agency specializing in web and mobile applications</li>
+          <li>Engage with us in other related ways, including any sales, marketing, or events</li>
+        </ul>
+
+        <p>
+          Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at support@parivartanx.com.
+        </p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">SUMMARY OF KEY POINTS</h2>
+        <p>
+          This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for.
+        </p>
+
+        <h3 className="text-xl font-bold mt-6 mb-2">What personal information do we process?</h3>
+        <p>
+          When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use.
+        </p>
+
+        <h3 className="text-xl font-bold mt-6 mb-2">Do we process any sensitive personal information?</h3>
+        <p>
+          Some of the information may be considered 'special' or 'sensitive' in certain jurisdictions. We do not process sensitive personal information.
+        </p>
+
+        <h3 className="text-xl font-bold mt-6 mb-2">Do we collect any information from third parties?</h3>
+        <p>
+          We do not collect any information from third parties.
+        </p>
+
+        <h3 className="text-xl font-bold mt-6 mb-2">How do we process your information?</h3>
+        <p>
+          We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We process your information only when we have a valid legal reason to do so.
+        </p>
+
+        <h3 className="text-xl font-bold mt-6 mb-2">How do we keep your information safe?</h3>
+        <p>
+          We have adequate organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure.
+        </p>
+
+        <h3 className="text-xl font-bold mt-6 mb-2">What are your rights?</h3>
+        <p>
+          Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information.
+        </p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">TABLE OF CONTENTS</h2>
+        <ol className="list-decimal pl-6">
+          <li>WHAT INFORMATION DO WE COLLECT?</li>
+          <li>HOW DO WE PROCESS YOUR INFORMATION?</li>
+          <li>WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</li>
+          <li>DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</li>
+          <li>HOW DO WE HANDLE YOUR SOCIAL LOGINS?</li>
+          <li>HOW LONG DO WE KEEP YOUR INFORMATION?</li>
+          <li>HOW DO WE KEEP YOUR INFORMATION SAFE?</li>
+          <li>DO WE COLLECT INFORMATION FROM MINORS?</li>
+          <li>WHAT ARE YOUR PRIVACY RIGHTS?</li>
+          <li>CONTROLS FOR DO-NOT-TRACK FEATURES</li>
+          <li>DO WE MAKE UPDATES TO THIS NOTICE?</li>
+          <li>HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</li>
+          <li>HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</li>
+        </ol>
+
+        {/* Continue with the rest of the sections... */}
         
-        <h2>1. Introduction</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
         <p>
-          Welcome to ExpenseZ. We respect your privacy and are committed to protecting your personal data. 
-          This privacy policy will inform you about how we look after your personal data when you use our 
-          application and tell you about your privacy rights.
+          If you have questions or comments about this notice, you may email us at support@parivartanx.com or contact us by post at:
         </p>
-        
-        <h2>2. Data We Collect</h2>
-        <h3>2.1 Personal Information</h3>
-        <ul>
-          <li>Email address</li>
-          <li>User authentication data</li>
-          <li>Profile information (name, profile picture)</li>
-        </ul>
+        <address className="not-italic">
+          Parivartan X<br />
+          Shadalichak Patna<br />
+          Dariyapur Brajeshwar market<br />
+          Patna, Bihar 804453<br />
+          India
+        </address>
 
-        <h3>2.2 Financial Information</h3>
-        <ul>
-          <li>Expense records</li>
-          <li>Budget data</li>
-          <li>Transaction history</li>
-          <li>Financial categories and tags</li>
-        </ul>
-
-        <h3>2.3 Device Information</h3>
-        <ul>
-          <li>Device type</li>
-          <li>Operating system</li>
-          <li>App version</li>
-          <li>IP address</li>
-          <li>Usage statistics</li>
-        </ul>
-
-        <h2>3. How We Use Your Data</h2>
-        <p>We use your data to:</p>
-        <ul>
-          <li>Provide and maintain our service</li>
-          <li>Process your transactions</li>
-          <li>Send you important updates</li>
-          <li>Improve our application</li>
-          <li>Detect and prevent fraud</li>
-          <li>Comply with legal obligations</li>
-        </ul>
-
-        <h2>4. Data Storage and Security</h2>
-        <ul>
-          <li>All data is encrypted during transmission</li>
-          <li>We use secure servers to store your information</li>
-          <li>Regular security audits are conducted</li>
-          <li>Access to your data is strictly controlled</li>
-        </ul>
-
-        <h2>5. Data Sharing</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
         <p>
-          We do not sell your personal information. We may share your data with:
+          Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law.
         </p>
-        <ul>
-          <li>Service providers who assist in operating our app</li>
-          <li>Legal authorities when required by law</li>
-          <li>Third-party analytics providers (anonymized data only)</li>
-        </ul>
-
-        <h2>6. Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-          <li>Access your personal data</li>
-          <li>Correct inaccurate data</li>
-          <li>Request deletion of your data</li>
-          <li>Export your data</li>
-          <li>Opt-out of marketing communications</li>
-        </ul>
-
-        <h2>7. Data Retention</h2>
-        <ul>
-          <li>We retain your data as long as your account is active</li>
-          <li>You can request data deletion at any time</li>
-          <li>Some data may be retained for legal compliance</li>
-        </ul>
-
-        <h2>8. Children's Privacy</h2>
         <p>
-          Our service is not intended for users under 13 years of age. We do not knowingly 
-          collect data from children under 13.
+          To request to review, update, or delete your personal information, please visit: <a href="https://hamaraticket.com/contact-us" className="text-primary hover:underline">https://hamaraticket.com/contact-us</a>.
         </p>
 
-        <h2>9. Changes to Privacy Policy</h2>
-        <p>
-          We may update this privacy policy from time to time. We will notify you of any 
-          changes by posting the new policy on this page.
+        <p className="mt-8 text-center text-lg font-medium">
+          HamaraTicket - Your Event Ticketing Solution
         </p>
-
-        <h2>10. Contact Information</h2>
-        <p>For any privacy-related questions, please contact:</p>
-        <ul>
-          <li>Email: astropunjapp@gmail.com</li>
-          <li>Developer: Prince Dubey</li>
-          <li>App: ExpenseZ</li>
-        </ul>
-
-        <h2>11. Third-Party Services</h2>
-        <p>Our app may use third-party services that collect information. These services include:</p>
-        <ul>
-          <li>Firebase (Authentication and Analytics)</li>
-          <li>Google Sign-In</li>
-          <li>Other necessary service providers</li>
-        </ul>
-
-        <h2>12. Data Protection</h2>
-        <p>We implement appropriate security measures to protect your data, including:</p>
-        <ul>
-          <li>Encryption of data in transit and at rest</li>
-          <li>Regular security assessments</li>
-          <li>Access controls and authentication</li>
-          <li>Secure data backup procedures</li>
-        </ul>
-
-        <h2>13. International Data Transfers</h2>
-        <p>
-          Your data may be transferred to and processed in countries other than your country 
-          of residence. We ensure appropriate safeguards are in place for such transfers.
-        </p>
-
-        <h2>14. Automated Decision Making</h2>
-        <p>We do not use automated decision-making processes that significantly affect you.</p>
-
-        <h2>15. Cookies and Tracking</h2>
-        <p>We use cookies and similar tracking technologies to:</p>
-        <ul>
-          <li>Remember your preferences</li>
-          <li>Analyze app usage</li>
-          <li>Improve our services</li>
-        </ul>
-
-        <h2>16. Data Breach Procedures</h2>
-        <p>In case of a data breach, we will:</p>
-        <ul>
-          <li>Notify affected users promptly</li>
-          <li>Take immediate action to mitigate the breach</li>
-          <li>Report to relevant authorities as required</li>
-          <li>Implement measures to prevent future breaches</li>
-        </ul>
-
-        <h2>17. User Consent</h2>
-        <p>By using ExpenseZ, you consent to:</p>
-        <ul>
-          <li>The collection and use of your data as described</li>
-          <li>The processing of your data in accordance with this policy</li>
-          <li>The transfer of your data as necessary for service provision</li>
-        </ul>
-
-        <h2>18. Compliance</h2>
-        <p>We comply with:</p>
-        <ul>
-          <li>General Data Protection Regulation (GDPR)</li>
-          <li>California Consumer Privacy Act (CCPA)</li>
-          <li>Other applicable data protection laws</li>
-        </ul>
-
-        <h2>19. Data Portability</h2>
-        <p>You can request a copy of your data in a commonly used format.</p>
-
-        <h2>20. Complaints</h2>
-        <p>
-          If you have concerns about our data practices, please contact us at astropunjapp@gmail.com.
-        </p>
-      </div>
-      
-      <div className="mt-12 text-center">
-        <Button asChild>
-          <Link href="/">Return to Home</Link>
-        </Button>
       </div>
     </div>
   );
-}
+};
+
+export default PrivacyPolicy;

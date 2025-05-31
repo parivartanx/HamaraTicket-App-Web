@@ -1,121 +1,95 @@
 import React from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Terms of Service - ExpenseZ App',
-  description: 'Terms of service for ExpenseZ personal finance management mobile application.'
+export const metadata: Metadata = {
+  title: 'Terms and Conditions - Hamara Ticket App',
+  description: 'Terms and Conditions for Hamara Ticket App - Your Event Ticketing Solution',
 };
 
-export default function TermsOfService() {
+const TermsAndConditions = () => {
   return (
-    <div className="container mx-auto px-4 py-24 max-w-4xl">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8">Terms of Service</h1>
-      
+    <div className="container mx-auto px-4 pt-24 py-16 max-w-4xl">
+      <h1 className="text-4xl font-bold mb-8">TERMS AND CONDITIONS</h1>
+      <p className="text-muted-foreground mb-8">Last updated February 23, 2025</p>
+
       <div className="prose prose-lg dark:prose-invert max-w-none">
-        <p className="lead text-muted-foreground">Last updated: January 2025</p>
-        
-        <h2>1. Agreement to Terms</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">AGREEMENT TO OUR LEGAL TERMS</h2>
         <p>
-          By downloading, installing, or using ExpenseZ ("the App"), you agree to be bound by these Terms of Service. 
-          If you disagree with any part of these terms, you may not access or use the App.
+          We are Parivartan X ('Company', 'we', 'us', or 'our').
         </p>
-        
-        <h2>2. Account Registration</h2>
-        <ul>
-          <li>You must provide accurate and complete information when creating an account</li>
-          <li>You are responsible for maintaining the security of your account credentials</li>
-          <li>You must notify us immediately of any unauthorized access to your account</li>
-          <li>We reserve the right to suspend or terminate accounts that violate these terms</li>
-        </ul>
-        
-        <h2>3. User Responsibilities</h2>
-        <p>You agree to:</p>
-        <ul>
-          <li>Use the App in compliance with all applicable laws and regulations</li>
-          <li>Not attempt to gain unauthorized access to the App or its systems</li>
-          <li>Not use the App for any illegal or unauthorized purpose</li>
-          <li>Not interfere with or disrupt the App's operation</li>
-        </ul>
-        
-        <h2>4. Subscription and Payments</h2>
-        <ul>
-          <li>Some features of the App may require a paid subscription</li>
-          <li>All payments are processed through authorized payment providers</li>
-          <li>Subscription fees are non-refundable except where required by law</li>
-          <li>We reserve the right to modify subscription prices with notice</li>
-        </ul>
-        
-        <h2>5. Intellectual Property</h2>
         <p>
-          The App, including its original content, features, and functionality, is owned by ExpenseZ 
-          and is protected by international copyright, trademark, and other intellectual property laws.
+          We operate the website http://www.hamaraticket.com (the 'Site'), the mobile application HamaraTicket (the 'App'), as well as any other related products and services that refer or link to these legal terms (the 'Legal Terms') (collectively, the 'Services').
         </p>
-        
-        <h2>6. Data Usage</h2>
-        <ul>
-          <li>We collect and process data as described in our Privacy Policy</li>
-          <li>You retain ownership of your personal data</li>
-          <li>We may use anonymized data for improving our services</li>
-        </ul>
-        
-        <h2>7. App Updates</h2>
-        <ul>
-          <li>We may release updates to improve functionality and security</li>
-          <li>Updates may be automatic or require user action</li>
-          <li>Continued use of the App may require accepting updates</li>
-        </ul>
-        
-        <h2>8. Third-Party Services</h2>
         <p>
-          The App may integrate with third-party services. Use of such services is subject to their 
-          respective terms and conditions.
+          HamaraTicket is an e-ticket booking platform that enables users to purchase tickets for parks, water parks, and private events in their vicinity. The platform offers a seamless ticketing experience, allowing customers to conveniently book tickets online. HamaraTicket is powered by ParivartanX, a leading software development agency specializing in web and mobile applications.
         </p>
-        
-        <h2>9. Disclaimer of Warranties</h2>
         <p>
-          The App is provided "as is" without warranties of any kind, either express or implied, 
-          including but not limited to merchantability and fitness for a particular purpose.
+          You can contact us by phone at +91 80 6964 5134, email at support@parivartanx.com, or by mail to Shadalichak Patna, Patna, Bihar 804453, India.
         </p>
-        
-        <h2>10. Limitation of Liability</h2>
         <p>
-          We shall not be liable for any indirect, incidental, special, consequential, or punitive 
-          damages resulting from your use or inability to use the App.
+          These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ('you'), and Parivartan X, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
         </p>
-        
-        <h2>11. Changes to Terms</h2>
         <p>
-          We reserve the right to modify these terms at any time. We will notify users of any 
-          material changes through the App or via email.
+          We will provide you with prior notice of any scheduled changes to the Services you are using. The modified Legal Terms will become effective upon posting or notifying you by support@parivartanx.com, as stated in the email message. By continuing to use the Services after the effective date of any changes, you agree to be bound by the modified terms.
         </p>
-        
-        <h2>12. Termination</h2>
         <p>
-          We may terminate or suspend your account and access to the App at our sole discretion, 
-          without prior notice, for conduct that we believe violates these Terms.
+          The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.
         </p>
-        
-        <h2>13. Governing Law</h2>
         <p>
-          These Terms shall be governed by and construed in accordance with the laws of the jurisdiction 
-          in which ExpenseZ operates.
+          We recommend that you print a copy of these Legal Terms for your records.
         </p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">TABLE OF CONTENTS</h2>
+        <ol className="list-decimal pl-6">
+          <li>OUR SERVICES</li>
+          <li>INTELLECTUAL PROPERTY RIGHTS</li>
+          <li>USER REPRESENTATIONS</li>
+          <li>USER REGISTRATION</li>
+          <li>PURCHASES AND PAYMENT</li>
+          <li>PROHIBITED ACTIVITIES</li>
+          <li>USER GENERATED CONTRIBUTIONS</li>
+          <li>CONTRIBUTION LICENCE</li>
+          <li>GUIDELINES FOR REVIEWS</li>
+          <li>MOBILE APPLICATION LICENCE</li>
+          <li>THIRD-PARTY WEBSITES AND CONTENT</li>
+          <li>SERVICES MANAGEMENT</li>
+          <li>PRIVACY POLICY</li>
+          <li>TERM AND TERMINATION</li>
+          <li>MODIFICATIONS AND INTERRUPTIONS</li>
+          <li>GOVERNING LAW</li>
+          <li>DISPUTE RESOLUTION</li>
+          <li>CORRECTIONS</li>
+          <li>DISCLAIMER</li>
+          <li>LIMITATIONS OF LIABILITY</li>
+          <li>INDEMNIFICATION</li>
+          <li>USER DATA</li>
+          <li>ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</li>
+          <li>SMS TEXT MESSAGING</li>
+          <li>MISCELLANEOUS</li>
+          <li>CONTACT US</li>
+        </ol>
+
+        {/* Continue with the rest of the sections... */}
         
-        <h2>14. Contact Information</h2>
-        <p>For any questions about these Terms, please contact us at:</p>
-        <ul>
-          <li>Email: astropunjapp@gmail.com</li>
-          <li>Developer: Prince Dubey</li>
-          <li>App: ExpenseZ</li>
-        </ul>
-      </div>
-      
-      <div className="mt-12 text-center">
-        <Button asChild>
-          <Link href="/">Return to Home</Link>
-        </Button>
+        <h2 className="text-2xl font-bold mt-8 mb-4">26. CONTACT US</h2>
+        <p>
+          In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
+        </p>
+        <address className="not-italic">
+          Parivartan X<br />
+          Shadalichak Patna<br />
+          Patna, Bihar 804453<br />
+          India<br /><br />
+          Phone: +91 80 6964 5134<br />
+          Email: support@parivartanx.com
+        </address>
+
+        <p className="mt-8 text-center text-lg font-medium">
+          HamaraTicket - Your Event Ticketing Solution
+        </p>
       </div>
     </div>
   );
-}
+};
+
+export default TermsAndConditions;

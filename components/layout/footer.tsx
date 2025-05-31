@@ -19,12 +19,12 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">EZ</span>
+                <span className="text-primary-foreground font-bold text-lg">HT</span>
               </div>
-              <span className="font-bold text-xl">ExpenseZ</span>
+              <span className="font-bold text-xl">Hamara Ticket</span>
             </div>
             <p className="text-muted-foreground">
-              Track expenses, manage budgets, and gain financial insights with ExpenseZ, your personal finance companion.
+              Book water parks and events with ease. Skip the lines, get instant tickets, and enjoy exclusive deals with Hamara Ticket.
             </p>
             <div className="flex space-x-4 pt-2">
               <Button variant="ghost" size="icon" aria-label="Facebook">
@@ -91,8 +91,8 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-muted-foreground" />
-                <a href="mailto:support@expensez.app" className="text-muted-foreground hover:text-foreground transition">
-                  princedubey.info@gmail.com
+                <a href="mailto:support@hamaraticket.com" className="text-muted-foreground hover:text-foreground transition">
+                  support@hamaraticket.com
                 </a>
               </li>
               <li className="flex items-center space-x-2">
@@ -104,8 +104,8 @@ const Footer = () => {
             </ul>
             <div className="mt-6">
               <Button asChild className="w-full">
-                <a href="https://play.google.com/expensez" target="_blank" rel="noreferrer">
-                  Download ExpenseZ
+                <a href="https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket&pcampaignid=web_share" target="_blank" rel="noreferrer">
+                  Download Hamara Ticket
                 </a>
               </Button>
             </div>
@@ -113,8 +113,8 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border pt-8 mt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} ExpenseZ. All rights reserved.</p>
-          <p className="mt-2">Built with ♥ by Prince Dubey for better financial management</p>
+          <p>© {new Date().getFullYear()} Hamara Ticket. All rights reserved.</p>
+          <p className="mt-2">Built with ♥ by the Hamara Ticket Team for better entertainment booking</p>
         </div>
       </div>
     </footer>

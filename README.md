@@ -1,7 +1,7 @@
-# ExpenseZ - Personal Finance Management App 🚀
+# Hamara Ticket - Water Park & Event Booking App 🎟️
 
 <div align="center">
-  <img src="public/expensez_icon.png" alt="ExpenseZ Logo" width="200"/>
+  <img src="public/hamara_ticket_icon.png" alt="Hamara Ticket Logo" width="200"/>
   
   [![Next.js](https://img.shields.io/badge/Next.js-13.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -11,39 +11,39 @@
 
 ## 📱 Overview
 
-ExpenseZ is a modern, intuitive personal finance management application that helps users track expenses, manage budgets, and gain valuable financial insights. Built with cutting-edge technologies, it offers a seamless experience across devices.
+Hamara Ticket is your all-in-one mobile platform for booking water park passes and tickets to popular local events. With a user-friendly interface and smooth checkout process, planning your day out has never been easier.
 
 ## ✨ Features
 
-- 💰 **Easy Expense Tracking**
-  - Quick expense logging
-  - Multi-currency support
-  - Receipt attachment
-  - Custom categories
+- 🎟️ **Easy Ticket Booking**
+  - Instant digital ticket generation
+  - Secure payment gateway
+  - Group booking support
+  - Booking history management
 
-- 📊 **Smart Budget Management**
-  - Monthly budget setting
-  - Visual progress indicators
-  - Category-wise budgeting
-  - Budget alerts
+- 🌊 **Water Park Bookings**
+  - Discover nearby water parks
+  - View park details & timings
+  - Real-time availability
+  - Instant ticket delivery
 
-- 📈 **Comprehensive Analytics**
-  - Detailed spending reports
-  - Visual charts
-  - Category analysis
-  - Trend insights
+- 🎉 **Event Tickets**
+  - Local event discovery
+  - Concert & festival bookings
+  - Date & location filtering
+  - Secure seat reservation
 
 - 🔔 **Smart Notifications**
-  - Bill reminders
-  - Budget alerts
-  - Unusual spending patterns
-  - Goal tracking
+  - Booking confirmations
+  - Event reminders
+  - Special offers
+  - Price alerts
 
 - 🔒 **Data Security**
   - Secure authentication
   - Data encryption
-  - Regular backups
   - Privacy focused
+  - Safe transactions
 
 ## 🛠️ Tech Stack
 
@@ -67,8 +67,8 @@ ExpenseZ is a modern, intuitive personal finance management application that hel
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/princedubey/ExpenseZ-website.git
-   cd expensez-website
+   git clone https://github.com/yourusername/hamara-ticket-website.git
+   cd hamara-ticket-website
    ```
 
 2. Install dependencies:
@@ -94,9 +94,9 @@ ExpenseZ is a modern, intuitive personal finance management application that hel
 
 ## 📱 Mobile App
 
-The ExpenseZ mobile app is available for Android devices. iOS version coming soon!
+The Hamara Ticket mobile app is available for Android devices. iOS version coming soon!
 
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.expensez.app)
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket&pcampaignid=web_share)
 
 ## 🤝 Contributing
 
@@ -114,9 +114,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: princedubey.info@gmail.com
-- 💬 Discord: [Join our community](https://discord.gg/expensez)
-- 🐦 Twitter: [@expensez](https://twitter.com/expensez)
+- 📧 Email: support@hamaraticket.com
+- 💬 Discord: [Join our community](https://discord.gg/hamaraticket)
+- 🐦 Twitter: [@hamaraticket](https://twitter.com/hamaraticket)
 
 ## 🙏 Acknowledgments
 
@@ -129,5 +129,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  Made with ❤️ by the Prince Dubey
+  Made with ❤️ by the Hamara Ticket Team
 </div> 
