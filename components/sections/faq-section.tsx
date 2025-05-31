@@ -48,25 +48,25 @@ const FAQSection = () => {
             className="text-primary font-medium mb-2"
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
-            FREQUENTLY ASKED QUESTIONS
+            FAQ
           </motion.p>
           <motion.h2
             className="text-3xl md:text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.3 }}
           >
-            Have Questions? We Have Answers
+            Frequently Asked Questions
           </motion.h2>
           <motion.p
             className="text-muted-foreground text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.3 }}
           >
-            Find answers to common questions about booking water parks and events with Hamara Ticket.
+            Find answers to common questions about using Hamara Ticket.
           </motion.p>
         </div>
         
@@ -80,9 +80,9 @@ const FAQSection = () => {
                 <motion.div
                   key={index}
                   ref={ref}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={isFaqInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isFaqInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
                 >
                   <AccordionItem value={`item-${index}`} className="border-b border-border/50">
                     <AccordionTrigger className="text-lg font-medium py-4">

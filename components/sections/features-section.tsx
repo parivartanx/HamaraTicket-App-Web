@@ -100,25 +100,25 @@ const FeaturesSection = () => {
             className="text-primary font-medium mb-2"
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
-            POWERFUL FEATURES
+            FEATURES
           </motion.p>
           <motion.h2
             className="text-3xl md:text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.3 }}
           >
-            Everything You Need for Entertainment
+            Everything You Need in One App
           </motion.h2>
           <motion.p
             className="text-muted-foreground text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.3 }}
           >
-            Hamara Ticket combines powerful features with an intuitive interface to make booking water parks and events a breeze.
+            Discover the powerful features that make Hamara Ticket your ultimate entertainment companion.
           </motion.p>
         </div>
         

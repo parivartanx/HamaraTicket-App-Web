@@ -55,15 +55,15 @@ const TestimonialsSection = () => {
             className="text-primary font-medium mb-2"
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
-            USER REVIEWS
+            TESTIMONIALS
           </motion.p>
           <motion.h2
             className="text-3xl md:text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.3 }}
           >
             What Our Users Say
           </motion.h2>
@@ -71,9 +71,9 @@ const TestimonialsSection = () => {
             className="text-muted-foreground text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.3 }}
           >
-            Join thousands of happy users who have transformed their entertainment booking experience
+            Join thousands of satisfied users who have transformed their entertainment experience with Hamara Ticket.
           </motion.p>
         </div>
         
@@ -86,10 +86,10 @@ const TestimonialsSection = () => {
               <motion.div
                 key={index}
                 ref={ref}
-                className="bg-background p-6 rounded-xl shadow-lg"
+                className="bg-card rounded-xl p-6 shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isTestimonialInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
               >
                 <div className="flex items-center mb-4">
                   <div className="flex-1">

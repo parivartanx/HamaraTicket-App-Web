@@ -17,7 +17,7 @@ const HeroSection = () => {
             className="space-y-6 text-center lg:text-left"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               Book Water Parks & Events with{" "}
@@ -66,9 +66,9 @@ const HeroSection = () => {
 
           <motion.div
             className="relative"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+            transition={{ duration: 0.3 }}
           >
             <div className="relative h-[600px] w-full">
               <div className="absolute top-0 right-0 md:right-10 h-[500px] w-[250px] bg-gradient-to-b from-blue-500 to-primary rounded-3xl overflow-hidden shadow-2xl transform rotate-3">
@@ -116,7 +116,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.3 }}
           >
             <h3 className="text-xl font-medium mb-6 text-muted-foreground">
               Trusted by thousands of users for their entertainment needs

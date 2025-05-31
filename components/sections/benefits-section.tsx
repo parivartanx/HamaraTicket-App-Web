@@ -34,7 +34,7 @@ const BenefitsSection = () => {
             className="text-primary font-medium mb-2"
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
             WHY USE HAMARA TICKET
           </motion.p>
@@ -42,7 +42,7 @@ const BenefitsSection = () => {
             className="text-3xl md:text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.3 }}
           >
             Transform Your Entertainment Experience
           </motion.h2>
@@ -50,7 +50,7 @@ const BenefitsSection = () => {
             className="text-muted-foreground text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.3 }}
           >
             Hamara Ticket helps you discover, book, and enjoy water parks and events with ease and convenience.
           </motion.p>
@@ -70,16 +70,18 @@ const BenefitsSection = () => {
               >
                 <motion.div 
                   className={`${isEven ? 'md:order-1' : 'md:order-2'}`}
-                  initial={{ opacity: 0, x: isEven ? -50 : 50 }}
-                  animate={isBenefitInView ? { opacity: 1, x: 0 } : { opacity: 0, x: isEven ? -50 : 50 }}
-                  transition={{ duration: 0.7, delay: 0.2 }}
+                  initial={{ opacity: 0, x: isEven ? -20 : 20 }}
+                  animate={isBenefitInView ? { opacity: 1, x: 0 } : { opacity: 0, x: isEven ? -20 : 20 }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-xl">
+                  <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden shadow-xl">
                     <Image
                       src={benefit.image}
                       alt={benefit.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
+                      priority={index === 0}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -91,9 +93,9 @@ const BenefitsSection = () => {
                 
                 <motion.div 
                   className={`${isEven ? 'md:order-2' : 'md:order-1'} flex flex-col justify-center`}
-                  initial={{ opacity: 0, x: isEven ? 50 : -50 }}
-                  animate={isBenefitInView ? { opacity: 1, x: 0 } : { opacity: 0, x: isEven ? 50 : -50 }}
-                  transition={{ duration: 0.7 }}
+                  initial={{ opacity: 0, x: isEven ? 20 : -20 }}
+                  animate={isBenefitInView ? { opacity: 1, x: 0 } : { opacity: 0, x: isEven ? 20 : -20 }}
+                  transition={{ duration: 0.3 }}
                 >
                   <h3 className="text-2xl md:text-3xl font-bold mb-6">{benefit.title}</h3>
                   <p className="text-lg text-muted-foreground mb-8">{benefit.description}</p>

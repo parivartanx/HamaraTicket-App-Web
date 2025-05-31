@@ -19,7 +19,7 @@ const DownloadCTA = () => {
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
             Book Your Next Adventure Today
           </motion.h2>
@@ -28,7 +28,7 @@ const DownloadCTA = () => {
             className="text-xl mb-8  max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.3 }}
           >
             Download Hamara Ticket now and experience hassle-free booking for water parks and events. Skip the lines, get instant tickets, and enjoy exclusive deals - all in one app.
           </motion.p>
@@ -37,7 +37,7 @@ const DownloadCTA = () => {
             className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.3 }}
           >
             <Button asChild size="lg" className="gap-2 text-lg">
               <a href="https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket" target="_blank" rel="noreferrer">
@@ -59,7 +59,7 @@ const DownloadCTA = () => {
             className="mt-8 text-sm"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.3 }}
           >
             <p>Available on Android devices. iOS version coming soon.</p>
             <p className="mt-1">Free to download with exclusive deals and offers</p>
