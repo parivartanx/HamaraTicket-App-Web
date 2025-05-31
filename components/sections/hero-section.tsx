@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <section className="relative pt-10 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-background/0 pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 py-16 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             className="space-y-6 text-center lg:text-left"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -21,35 +21,49 @@ const HeroSection = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               Book Water Parks & Events with{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-red-500">
                 Hamara Ticket
               </span>
             </h1>
-            
+
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
-              Your all-in-one platform for booking water park passes and event tickets. Skip the lines, book online, and enjoy instant digital tickets.
+              Your all-in-one platform for booking water park passes and event
+              tickets. Skip the lines, book online, and enjoy instant digital
+              tickets.
             </p>
-            
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href="https://www.hamaraticket.com/" target="_blank" rel="noopener noreferrer">
-                  Book Tickets Now
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket" target="_blank" rel="noopener noreferrer">
+
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+              <Button
+                asChild
+                size="lg"
+                className="bg-primary hover:bg-primary/90"
+              >
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.parivartanx.hamaraticket"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Download App
                 </Link>
               </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link
+                  href="https://www.hamaraticket.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Tickets Now
+                </Link>
+              </Button>
             </div>
-            
+
             <div className="pt-4">
               <p className="text-sm text-muted-foreground">
                 Available on Android. iOS coming soon.
               </p>
             </div>
           </motion.div>
-          
+
           <motion.div
             className="relative"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -75,7 +89,7 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="absolute bottom-0 left-0 md:left-10 h-[500px] w-[250px] bg-gradient-to-b from-primary to-blue-600 rounded-3xl overflow-hidden shadow-2xl transform -rotate-3">
                 <Image
                   src="home.jpeg"
@@ -97,14 +111,16 @@ const HeroSection = () => {
             </div>
           </motion.div>
         </div>
-        
+
         <div className="mt-16 md:mt-24 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <h3 className="text-xl font-medium mb-6 text-muted-foreground">Trusted by thousands of users for their entertainment needs</h3>
+            <h3 className="text-xl font-medium mb-6 text-muted-foreground">
+              Trusted by thousands of users for their entertainment needs
+            </h3>
             <div className="flex flex-wrap justify-center gap-8 md:gap-16">
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
@@ -115,7 +131,7 @@ const HeroSection = () => {
                   <p className="text-sm text-muted-foreground">Play Store</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
                   <span className="text-lg font-bold">100+</span>
@@ -125,24 +141,28 @@ const HeroSection = () => {
                   <p className="text-sm text-muted-foreground">Active Users</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
                   <span className="text-lg font-bold">10+</span>
                 </div>
                 <div className="ml-3 text-left">
                   <p className="font-medium">Water Parks</p>
-                  <p className="text-sm text-muted-foreground">Partnered with</p>
+                  <p className="text-sm text-muted-foreground">
+                    Partnered with
+                  </p>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
                   <span className="text-lg font-bold">10+</span>
                 </div>
                 <div className="ml-3 text-left">
                   <p className="font-medium">Events</p>
-                  <p className="text-sm text-muted-foreground">Monthly bookings</p>
+                  <p className="text-sm text-muted-foreground">
+                    Monthly bookings
+                  </p>
                 </div>
               </div>
             </div>

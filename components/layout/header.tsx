@@ -34,9 +34,13 @@ const Header = () => {
     )}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">HT</span>
-          </div>
+          <Image
+            src="logo.png"
+            alt="Hamara Ticket Event Booking"
+            className="rounded-lg"
+            width={50}
+            height={50}
+          />
           <span className="font-bold text-xl">Hamara Ticket</span>
         </Link>
         
